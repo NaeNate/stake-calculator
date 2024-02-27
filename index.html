@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Stake Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Stake Calculator</h1>
+      </header>
+
+      <main>
+        <form>
+          <div class="group">
+            <label for="deposits">Upload Deposits CSV:</label>
+            <input type="file" id="deposits" accept=".csv" />
+          </div>
+
+          <div class="group">
+            <label for="withdrawals">Upload Withdrawals CSV:</label>
+            <input type="file" id="withdrawals" accept=".csv" />
+          </div>
+
+          <div class="group">
+            <label for="current">Current Stake Balance:</label>
+            <input type="number" id="current" step="0.01" />
+          </div>
+
+          <button>Calculate Net</button>
+        </form>
+
+        <p id="net"></p>
+      </main>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
